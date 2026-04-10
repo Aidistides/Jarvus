@@ -1,0 +1,13 @@
+.env
+data/knowledge/chroma/
+data/knowledge/sources/
+data/knowledge/processed/
+data/memory/transcripts/
+data/memory/learnings.json
+data/memory/decisions.json
+data/memory/facts.json
+data/knowledge/registry.json
+.DS_Store
+info/*
+/node_modules/
+/dist/
