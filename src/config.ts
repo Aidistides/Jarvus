@@ -25,22 +25,22 @@ export let REGISTRY_FILE = join(KNOWLEDGE_DIR, "registry.json");
 export let SYSTEM_PROMPT_FILE = join(DATA_DIR, "system-prompt.md");
 
 // Models
-export const CHAT_MODEL = "gpt-5.4";
-export const EMBEDDING_MODEL = "text-embedding-3-small";
+export let CHAT_MODEL = "gpt-5.4";
+export let EMBEDDING_MODEL = "text-embedding-3-small";
 
 // RAG
-export const CHUNK_SIZE = 500;
-export const CHUNK_OVERLAP = 50;
-export const RAG_TOP_K = 10;
+export let CHUNK_SIZE = 500;
+export let CHUNK_OVERLAP = 50;
+export let RAG_TOP_K = 10;
 
 // Conversation
-export const MAX_HISTORY_MESSAGES = 20;
-export const MAX_STEPS = 500;
+export let MAX_HISTORY_MESSAGES = 20;
+export let MAX_STEPS = 500;
 
 // Memory in prompt
-export const MAX_DECISIONS_IN_PROMPT = 10;
-export const MAX_LEARNINGS_IN_PROMPT = 10;
-export const MAX_FACTS_IN_PROMPT = 10;
+export let MAX_DECISIONS_IN_PROMPT = 10;
+export let MAX_LEARNINGS_IN_PROMPT = 10;
+export let MAX_FACTS_IN_PROMPT = 10;
 
 // Allowed users: telegram username -> display name
 export const ALLOWED_USERS: Record<string, string> = {

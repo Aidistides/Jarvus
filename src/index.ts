@@ -1,6 +1,7 @@
 import express from 'express';
 import { createBot } from './bot.js';
 import { ensureDirs, WEBHOOK_URL } from './config.js';
+import { createDashboardRouter } from './dashboard.js';
 
 const app = express();
 app.use(express.json());
@@ -15,6 +16,8 @@ app.post('/webhook', (req, res) => {
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok', service: 'root' });
 });
+
+app.use('/dashboard', createDashboardRouter());
 
 const PORT = process.env.PORT ?? 8080;
 
